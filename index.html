@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.,.,.,</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>.,.,.,</h1>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to .,.,.,</h2>
+            <p>Find the shortest path in a grid-based layout.</p>
+            <button onclick="document.getElementById('dimensionsForm').style.display='block'">Start</button>
+        </section>
+
+        <section id="dimensionsForm" style="display: none;">
+            <h2>Enter Map Dimensions</h2>
+            <p id="dimensionInfo">Enter dimensions (3 to 8 for both rows and columns):</p>
+            <label for="columnsInput">Number of Columns (Y):</label>
+            <input type="number" id="columnsInput" min="1" placeholder="e.g. 3">
+            <br>
+            <label for="rowsInput">Number of Rows (X):</label>
+            <input type="number" id="rowsInput" min="1" placeholder="e.g. 2">
+            <br>
+            <button onclick="generateTable()">Generate Map</button>
+        </section>
+
+        <section id="tableContainer" style="display: none;">
+            <!-- Table will be generated here -->
+        </section>
+
+        <section id="inputPoints" style="display: none;">
+            <h2>Input Start and End Points</h2>
+            <label for="startPoint">Starting Point (e.g., X1Y1):</label>
+            <input type="text" id="startPoint" placeholder="e.g. X1Y1">
+            <br>
+            <label for="endPoint">Ending Point (e.g., X2Y2):</label>
+            <input type="text" id="endPoint" placeholder="e.g. X2Y2">
+            <br>
+            <button onclick="calculateShortestPath()">Calculate Shortest Distance</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>IZU'S FINAL PROJECT</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
